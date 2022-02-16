@@ -4,7 +4,7 @@ const isServerSide = typeof window === undefined
 const ssrCache = ssrExchange({isClient: !isServerSide})
 
 const client = createClient({
-  url: process.env.GRAPHCMS_KEY,
+  url: 'https://api-sa-east-1.graphcms.com/v2/ckzp39tel381h01yyc6y8ek9s/master',
   exchanges: [dedupExchange, cacheExchange, ssrCache, fetchExchange],
 })
 
